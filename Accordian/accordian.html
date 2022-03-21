@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<style type="text/css">	
+		body {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 100vh;
+	 width: 100vw;
+	 padding: 0 200px;
+	 background-image: linear-gradient(72deg, #921f2e 17%, #dc2b1c 100%);
+	 color: #fff;
+}
+section {
+    width: 100%;
+}
+ h3 {
+	 font-family: Roboto-Thin;
+	 font-size: 34px;
+}
+ h5 {
+	 font-family: Roboto-Medium;
+	 font-size: 20px;
+}
+ h6 {
+	 font-family: Roboto-Medium;
+	 font-size: 16px;
+}
+ .accordion-wrap {
+	 width: 100%;
+	 display: flex;
+	 flex-direction: column;
+}
+ .accordion-wrap a {
+	 color: #fff;
+	 tex-decoration: none;
+}
+ .accordion-wrap a:hover {
+	 text-decoration: none;
+}
+ .accordion-wrap .accordion {
+	 position: relative;
+	 border-top: 1px solid #fff;
+}
+ .accordion-wrap .accordion:last-child {
+	 border-bottom: 1px solid #fff;
+}
+ .accordion-wrap .accordion .teaser {
+	 display: flex;
+	 align-items: flex-start;
+	 justify-content: flex-start;
+	 width: 100%;
+	 padding: 24px 100px 24px 0;
+	 position: relative;
+}
+ .accordion-wrap .accordion .teaser:last-child {
+	 border-bottom: 1px solid #fff;
+}
+ .accordion-wrap .accordion .teaser .time {
+	 margin-top: 5px;
+	 width: 200px;
+}
+ .accordion-wrap .accordion .teaser .title .theme {
+	 opacity: 0.4;
+}
+ @media (max-width: 990px) {
+	 .accordion-wrap .accordion .teaser {
+		 flex-direction: column;
+	}
+}
+ .accordion-wrap .accordion .content {
+	 padding: 0 120px 30px 200px;
+}
+ @media (max-width: 1200px) {
+	 .accordion-wrap .accordion .content {
+		 padding: 0 120px 30px 0;
+	}
+}
+ .accordion-wrap .accordion .accordion-toggle {
+	 width: 100px;
+	 height: 100%;
+	 position: absolute;
+	 background-color: rgba(255, 255, 255, .14);
+	 right: 0;
+	 top: 0;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 transition: 0.3s ease;
+}
+ .accordion-wrap .accordion .accordion-toggle span {
+	 background-color: #fff;
+	 transition: 0.3s ease;
+}
+ .accordion-wrap .accordion .accordion-toggle span.one {
+	 height: 1px;
+	 width: 26px;
+	 position: absolute;
+	 top: 50%;
+}
+ .accordion-wrap .accordion .accordion-toggle span.two {
+	 width: 1px;
+	 height: 26px;
+	 position: absolute;
+	 left: 50%;
+	 opacity: 0;
+	 transform: rotate(120deg);
+}
+ .accordion-wrap .accordion.collapsed .accordion-toggle span.two {
+	 opacity: 1;
+	 transform: rotate(0);
+}
+ 
+	</style>
+	<section>
+				<div class="accordion-wrap">
+			<a class="accordion" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" >
+			<div class="teaser">
+				<div class="time">
+					<h5>10:15 – 11:00 Uhr</h5>
+				</div>
+			
+				<div class="title">
+					<h3>Unterthema Y</h3>
+					<h6 class="theme">Themenblock 4</h6>
+				</div>
+			</div>
+				
+				<div class="collapse" id="collapseOne">
+		  <div class="content">
+		    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+		  </div>
+		</div>
+				
+				<div class="accordion-toggle">
+					<span class="one"></span>
+					<span class="two"></span>
+				</div>
+			</a>
+
+			
+			
+			<a class="accordion" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" >
+			<div class="teaser">
+				<div class="time">
+					<h5>10:15 – 11:00 Uhr</h5>
+				</div>
+			
+				<div class="title">
+					<h3>Unterthema Y</h3>
+					<h6 class="theme">Themenblock 4</h6>
+				</div>
+				</div>
+				
+				<div class="collapse" id="collapseTwo">
+		  <div class="content">
+		    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+		  </div>
+		</div>
+				
+				<div class="accordion-toggle">
+					<span class="one"></span>
+					<span class="two"></span>
+				</div>
+			</a>
+			
+			
+			
+			<a class="accordion" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" >
+			<div class="teaser">
+				<div class="time">
+					<h5>10:15 – 11:00 Uhr</h5>
+				</div>
+			
+				<div class="title">
+					<h3>Unterthema Y</h3>
+					<h6 class="theme">Themenblock 4</h6>
+				</div>
+				</div>
+				
+				<div class="collapse" id="collapseThree">
+		  <div class="content">
+		    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+		  </div>
+		</div>
+				
+				<div class="accordion-toggle">
+					<span class="one"></span>
+					<span class="two"></span>
+				</div>
+			</a>
+		</div>
+	</section>
+</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
